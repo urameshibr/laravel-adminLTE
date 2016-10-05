@@ -55,8 +55,7 @@ class AdminLTETemplateServiceProvider extends ServiceProvider
         $this->publishes([
             dirname(__FILE__) . '/../../resources/views/auth' => base_path('resources/views/auth'),
             dirname(__FILE__) . '/../../resources/views/errors' => base_path('resources/views/errors'),
-            dirname(__FILE__) . '/../../resources/views/partials' => base_path('resources/views/partials'),
-            dirname(__FILE__) . '/../../resources/views/app.blade.php' => base_path('resources/views/app.blade.php'),
+            dirname(__FILE__) . '/../../resources/views/layouts' => base_path('resources/views/layouts'),
             dirname(__FILE__) . '/../../resources/views/home.blade.php' => base_path('resources/views/home.blade.php'),
             dirname(__FILE__) . '/../../resources/views/welcome.blade.php' => base_path('resources/views/welcome.blade.php'),
         ]);
