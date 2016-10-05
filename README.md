@@ -71,7 +71,7 @@ First install Laravel (http://laravel.com/docs/5.0/installation) and then Create
 Add admint-lte Laravel package with:
 
 <pre>
- $ composer require "urameshibr/laravel-adminLTE"
+ $ composer require "urameshibr/laravel-adminlte"
 </pre> 
  
 Register ServiceProvider editing **config/app.php** file and adding to providers array:
