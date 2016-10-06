@@ -24,7 +24,7 @@
 
     <div class="login-box-body">
     <p class="login-box-msg"> {{ trans('adminlte_lang::message.siginsession') }} </p>
-    <form action="{{ url('/login') }}" method="post">
+    <form action="{{ url('/auth/login') }}" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="form-group has-feedback">
             <input type="email" class="form-control" placeholder="{{ trans('adminlte_lang::message.email') }}" name="email"/>
@@ -51,7 +51,7 @@
     @include('auth.partials.social_login')
 
     <a href="{{ url('/password/reset') }}">{{ trans('adminlte_lang::message.forgotpassword') }}</a><br>
-    <a href="{{ url('/register') }}" class="text-center">{{ trans('adminlte_lang::message.registermember') }}</a>
+    <a href="{{ url('/auth/register') }}" class="text-center">{{ trans('adminlte_lang::message.registermember') }}</a>
 
 </div><!-- /.login-box-body -->
 
